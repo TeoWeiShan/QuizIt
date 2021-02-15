@@ -14,10 +14,10 @@ Our design process is for it to be simple so that everyone can use it to have fu
 ## Features
 
 ### Existing Features
-- The Quiz game includes a 'High Score/Leaderboard' feature which showcases the top scores that you have gotten. You can use this to play and compare among friends for fun as well.
+- The Quiz game includes a 'Leaderboard' feature which showcases the top scores that you have gotten. You can use this to play and compare among friends for fun as well.
 
 ## Features Left to Implement
-Another feature idea
+- Changeable difficulty 
 ## Technologies Used
 - jQuery used for display manipulation, showing correct answers/turning correct boxes green etc.
 - Others include Visual Studio Code to program the webpage using HTML and CSS.
@@ -25,11 +25,22 @@ Another feature idea
 
 ## Testing
 
+## Deployment
+Website: https://teoweishan.github.io/QuizIt/
+
+All files can be downloaded in ZIP file at: https://teoweishan.github.io/QuizIt/
+
+urlAPI can be changed in quiz.js to include your own API Key.
 
 ## Credits
 ### Content
-- API datasets were taken from: https://opentdb.com/
+- [API](https://opentdb.com/)
+- [JQuery](https://jquery.com)
 ### Media
 
+### Codes
+- [Stephen H. Hulme](https://github.com/shulme801)
+- [James Q Quick](https://www.jamesqquick.com/)
+
 ### Acknowledgements
-I received inspiration for this project from another Quiz type website/app called Kahoot!.
+Inspirations for this project were received from another Quiz type website/app called Kahoot! and Ngee Ann Polytechnic School of ICT Interactive Development Department.
