@@ -14,10 +14,10 @@ Our design process is for it to be simple so that everyone can use it to have fu
 ## Features
 
 ### Existing Features
-- The Quiz game includes a 'Leaderboard' feature which showcases the top scores that you have gotten. You can use this to play and compare among friends for fun as well.
+- The Quiz game includes a 'Leaderboard' feature which showcases the top scores that you have gotten. You can use this to keep track your scores.
 
 ## Features Left to Implement
-- Changeable difficulty 
+- Online Database for Online Leaderboards
 ## Technologies Used
 - jQuery used for display manipulation, showing correct answers/turning correct boxes green etc.
 - Others include Visual Studio Code to program the webpage using HTML and CSS.
