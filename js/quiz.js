@@ -39,7 +39,7 @@ function initGame(loadQns){
   //Internal retrival error
   if (loadQns.response_code !== 0){
     alert("API retrival error");
-    window.location.assign('/index.html');
+    window.location.assign('index.html');
 
   }
   questions = loadQns.results.map(function (loadQn)
