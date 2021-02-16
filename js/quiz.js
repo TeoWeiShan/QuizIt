@@ -92,7 +92,7 @@ getQn = () => {
   //Check available and questions & redirect when all has been answered
     if (availQn.length === 0 || qnCounter >= maxQn) {
         localStorage.setItem('latestPoint', points);
-        window.location.assign('/end.html');
+        window.location.assign('end.html');
     }
     else{
       //Update game info display
