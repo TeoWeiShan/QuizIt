@@ -10,6 +10,48 @@ body{
   color: rgb(0, 0, 0);
 }
 
+.trivia_selector{  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+
+.selector-header{  
+  font-size: 2em;
+  text-align: center;
+  padding-top: 10px;
+}
+
+
+input[type=number], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid cornflowerblue;
+  border-radius: 4px;
+  box-sizing: border-box;
+  padding-bottom: 5px;
+}
+
+
+
+.btn {
+  font-size: 1rem;
+  padding: 0.75rem 1rem;
+  width: 100%;
+  text-align: center;
+  border: 0.1rem solid cornflowerblue;
+  border-radius: 15px;
+  margin-bottom: 1rem;
+  text-decoration: none;
+  color: cornflowerblue;
+  background-color: white;
+  align-items: center;
+}
+
+
 .animation-center{  
   display: flex;
   justify-content: center;
@@ -23,12 +65,7 @@ h1 {
   margin-bottom: 5rem;
 }
 
-h2 {
-  font-size: 2em;
-  margin-bottom: 1em;
-  font-weight: 700;
-  text-align: left;
-}
+
 
 
 .container {
@@ -99,6 +136,13 @@ game{
   padding: 1px;
 }
 
+#question {
+  font-size: 2em;
+  margin-bottom: 1em;
+  font-weight: 700;
+  text-align: left;
+}
+
 .correct {
   background-color: lightseagreen;
 }
@@ -106,3 +150,4 @@ game{
 .incorrect {
   background-color: lightcoral;
 }
+

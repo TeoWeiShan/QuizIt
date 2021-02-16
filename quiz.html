@@ -5,10 +5,24 @@
     <meta name="viewport" content="width=device-width">
     <title>QuizIt!</title>
     <link href="css/quiz.css" rel="stylesheet" type="text/css" />
-    <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+    <link rel="shortcut icon" type="image/png" href="img/Favicon.png">
   </head>
   <body>
-    <div id="loader" class="animation-center">
+    <div id="selector" class="trivia_selector" >
+      <form action="" method="post" class="form-api">
+      <h2 class="selector-header">Number of Questions</h2>
+      <input type="number" id="amount" class="form-control" min="1" max="50" value="10">
+      <h2 class="selector-header">Difficulty</h2>
+      <select id="difficulty" class="form-control">
+			<option value="easy">Easy</option>
+			<option value="medium">Medium</option>
+			<option value="hard">Hard</option>
+		  </select>
+      <br></br>
+      <button class="btn" id="btn-submit">Start Quiz</button>
+	  </form>
+    </div>
+    <div id="loader" class="animation-center hidden">
 			<div style="display:block;">
 				<lottie-player src="json/loader.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop autoplay></lottie-player>
 			</div>

@@ -1,5 +1,18 @@
-let urlAPI = "https://opentdb.com/api.php?amount=5&category=9&difficulty=easy&type=multiple";
-let question = $('#question')[0];
+$(document).ready(function(){
+
+  //add our event listener which is our button
+  $("#btn-submit").on("click", function(event){
+    //prevent the default action of our button
+    event.preventDefault();
+
+    let amount = $("#amount").val();
+    let difficulty = $("#difficulty").val();
+
+    let urlAPI= "https://opentdb.com/api.php?amount=" + amount + "&category=9&difficulty=" + difficulty + "&type=multiple";
+
+    ($('#selector')[0]).classList.add('hidden');
+    ($('#loader')[0]).classList.remove('hidden');
+
 let options = ($('.option-text').toArray());
 let pointsText = $('#points')[0];
 let currentQn = {};
@@ -7,7 +20,6 @@ let acceptingAnswers = false;
 let points = 0;
 let qnCounter = 0;
 let availQn = [];
-
 let questions = [];
 //GET opentdb data 
 $.ajax({
@@ -17,7 +29,11 @@ $.ajax({
           initGame(data);},
           error:function() {
           alert( "API retrival error" );}
+
         })
+
+
+
 //Load data into html
 function initGame(loadQns){
   //Internal retrival error
@@ -49,9 +65,18 @@ function initGame(loadQns){
 
         startGame();}
 
-//CONSTANTS
-let correctPoints = 10;
-let maxQn = 5;
+
+let correctPoints;
+if (difficulty == "easy"){
+correctPoints = 1;
+}
+else if (difficulty == "medium"){
+correctPoints = 2;
+}
+else if (difficulty == "hard"){
+correctPoints = 3;
+}
+let maxQn = amount;
 
 startGame = () => {
     qnCounter = 0;
@@ -122,4 +147,9 @@ options.forEach(function(option) {
       }
         
     });
+});
+
+
+
+  })
 });
