@@ -54,3 +54,14 @@ h1{
   color: cornflowerblue;
   background-color: white;
 }
+
+.hidden {
+  display: none;
+}
+
+#btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
