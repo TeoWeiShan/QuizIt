@@ -1,5 +1,3 @@
-/*jshint esversion: 6 */ 
-/*globals $:false */
 $(document).ready(function () {
   $("#btn-submit").on("click", function (event) {
     //prevent the default action of our button
@@ -65,7 +63,7 @@ $(document).ready(function () {
           };
 
           let answerOptions = [...loadQn.incorrect_answers];
-          formatQn.answer = Math.round(Math.random() * 4) + 1;
+          formatQn.answer = Math.floor(Math.random() * 4) + 1;
           answerOptions.splice(
             formatQn.answer - 1, 0, loadQn.correct_answer
           );
@@ -116,12 +114,12 @@ $(document).ready(function () {
       else {
         //Update game info display
         qnCounter++;
-        questionNumber.innerText = `${qnCounter}/${maxQn}`;
+        $('#questionNumber')[0].innerText = `${qnCounter}/${maxQn}`;
         pointsText.innerText = points;
 
         let questionIndex = Math.floor(Math.random() * availQn.length);
         currentQn = availQn[questionIndex];
-        question.innerHTML = currentQn.question;
+        $('#question')[0].innerHTML = currentQn.question;
 
         options.forEach(function (option) {
           let number = option.dataset.number;
