@@ -11,7 +11,7 @@
     <div id="selector" class="trivia_selector" >
       <form method="post" class="form-api">
       <h2 class="selector-header">Number of Questions</h2>
-      <input type="number" id="amount" class="form-control" min="1" max="50" value="10">
+      <input type="number" onkeydown="return event.keyCode !== 69" id="amount" class="form-control" min="1" max="50" value="10">
       <h2 class="selector-header">Difficulty</h2>
       <select id="difficulty" class="form-control">
 			<option value="easy">Easy</option>
