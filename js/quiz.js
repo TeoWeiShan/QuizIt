@@ -1,3 +1,5 @@
+/*jshint esversion: 6 */ 
+/*globals $:false */
 $(document).ready(function () {
   $("#btn-submit").on("click", function (event) {
     //prevent the default action of our button
@@ -43,7 +45,7 @@ $(document).ready(function () {
         alert("API retrival error");
       }
 
-    })
+    });
 
 
 
@@ -102,7 +104,7 @@ $(document).ready(function () {
       getQn();
       ($('#loader')[0]).classList.add('hidden');
       ($('#game')[0]).classList.remove('hidden');
-    };
+    }
 
     //Retrive and display question
     function getQn() {
@@ -122,7 +124,7 @@ $(document).ready(function () {
         question.innerHTML = currentQn.question;
 
         options.forEach(function (option) {
-          let number = option.dataset['number'];
+          let number = option.dataset.number;
           option.innerHTML = currentQn['option' + number];
         });
         //Remove answeed question from loaded question array
@@ -131,7 +133,7 @@ $(document).ready(function () {
 
       }
 
-    };
+    }
 
     options.forEach(function (option) {
       option.addEventListener('click', function (event) {
@@ -141,14 +143,14 @@ $(document).ready(function () {
           acceptingAnswers = false;
           //Retain input details
           let selectedOption = event.target;
-          let selectedAnswer = selectedOption.dataset['number'];
+          let selectedAnswer = selectedOption.dataset.number;
           //Apply correct wrong classes for display
-          let classToApply = 'incorrect'
+          let classToApply = 'incorrect';
           if (selectedAnswer == currentQn.answer) {
             classToApply = 'correct';
           }
           //Allow visual changes in css
-          $(selectedOption).parent().addClass(classToApply)
+          $(selectedOption).parent().addClass(classToApply);
           //Update game info display (points)
           if (classToApply === 'correct') {
             points += correctPoints;
@@ -166,7 +168,7 @@ $(document).ready(function () {
       });
     });
 
-  })
+  });
   $("#amount").ForceNumericOnly();
 });
 // Validation for Number of Questions input: Allows only numerical inputs
