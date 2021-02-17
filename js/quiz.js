@@ -5,6 +5,7 @@ $(document).ready(function () {
 
     let amount = $("#amount").val();
     let difficulty = $("#difficulty").val();
+    //Number of questions limitation/validation: 1 to 50
     if (amount == "") {
       alert("Don't leave it empty!");
       return false;
@@ -92,7 +93,7 @@ $(document).ready(function () {
     else if (difficulty == "hard") {
       correctPoints = 3;
     }
-    let maxQn = amount;
+    let maxQn = parseInt(amount, 10);
 
     function startGame() {
       qnCounter = 0;
@@ -168,6 +169,7 @@ $(document).ready(function () {
   })
   $("#amount").ForceNumericOnly();
 });
+// Validation for Number of Questions input: Allows only numerical inputs
 jQuery.fn.ForceNumericOnly =
 function()
 {
