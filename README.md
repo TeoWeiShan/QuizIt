@@ -19,11 +19,13 @@ Our design process is for it to be simple so that everyone can use it to have fu
 ## Features Left to Implement
 - Online Database for Online Leaderboards
 ## Technologies Used
-- jQuery used for display manipulation, showing correct answers/turning correct boxes green etc.
+- jQuery used for display manipulation, showing correct answers/turning correct boxes green etc
 - Others include Visual Studio Code to program the webpage using HTML and CSS.
 - As well as Adobe XD which was used for the wireframes of the webpage.
 
 ## Testing
+HTML validator using [this website](https://validator.w3.org/)
+CSS validator using [this website](https://jigsaw.w3.org/css-validator/)
 
 ## Deployment
 Website: https://teoweishan.github.io/QuizIt/
@@ -36,11 +38,12 @@ urlAPI can be changed in quiz.js to include your own API Key.
 ### Content
 - [API](https://opentdb.com/)
 - [JQuery](https://jquery.com)
+- [Lottie animations](https://lottiefiles.com/)
 ### Media
 
 ### Codes
 - [Stephen H. Hulme](https://github.com/shulme801)
 - [James Q Quick](https://www.jamesqquick.com/)
-
+- [Number of questions validation](https://stackoverflow.com/questions/995183/how-to-allow-only-numeric-0-9-in-html-inputbox-using-jquery)
 ### Acknowledgements
 Inspirations for this project were received from another Quiz type website/app called Kahoot! and Ngee Ann Polytechnic School of ICT Interactive Development Department.
