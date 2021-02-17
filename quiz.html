@@ -10,8 +10,10 @@
   <body>
     <div id="selector" class="trivia_selector" >
       <form method="post" class="form-api">
+      <!-- Input for number of questions, range of 1 to 50-->
       <h2 class="selector-header">Number of Questions</h2>
       <input type="number" id="amount" class="form-control" min="1" max="50" value="10">
+      <!-- Input difficulty, easy/medium/hard-->
       <h2 class="selector-header">Difficulty</h2>
       <select id="difficulty" class="form-control">
 			<option value="easy">Easy</option>
@@ -19,9 +21,11 @@
 			<option value="hard">Hard</option>
 		  </select>
       <br><br>
+      <!-- Button for submitting number of questions and difficulty-->
       <button class="btn" id="btn-submit">Start Quiz</button>
 	  </form>
     </div>
+    <!-- Lottie animation for loading icon-->
     <div id="loader" class="animation-center hidden">
 			<div style="display:block;">
 				<lottie-player src="json/loader.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop autoplay></lottie-player>
@@ -34,6 +38,7 @@
             <p class="game-info-header">
               Question
             </p>
+            <!-- Current question number out of total number of questions-->
             <h1 id="questionNumber" class="game-info-text">
             </h1>
           </div>
@@ -41,11 +46,14 @@
             <p class="game-info-header">
               Points
             </p>
+            <!-- Current points scored-->
             <h1 id="points" class="game-info-text">
             </h1>
           </div>
         </div>
+        <!-- Question loaded in from API -->
         <h2 id="question"></h2>
+        <!-- 4 Options for the question -->
         <div class="option-container">
           <p class="option-header">1</p>
           <p class="option-text" data-number="1"></p>
