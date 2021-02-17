@@ -54,7 +54,8 @@ function initGame(loadQns){
     window.location.assign('index.html');
 
   }
-  questions = loadQns.results.map(function (loadQn)
+  else{
+    questions = loadQns.results.map(function (loadQn)
      {
        //Format data to use
        let formatQn = {
@@ -76,6 +77,9 @@ function initGame(loadQns){
         });
 
         startGame();}
+
+  }
+  
 
 
 let correctPoints;
