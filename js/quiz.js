@@ -68,7 +68,7 @@ function initGame(loadQns){
                 formatQn.answer - 1,0,loadQn.correct_answer
             );
 
-            answerOptions.forEach((option, index) => {
+            answerOptions.forEach(function(option, index) {
                 formatQn['option' + (index + 1)] = option;
             });
 
@@ -94,7 +94,7 @@ correctPoints = 3;
 }
 let maxQn = amount;
 
-startGame = () => {
+function startGame () {
     qnCounter = 0;
     points = 0;
     availQn = [...questions];
@@ -104,7 +104,7 @@ startGame = () => {
 };
 
 //Retrive and display question
-getQn = () => {
+function getQn () {
   //Check available and questions & redirect when all has been answered
     if (availQn.length === 0 || qnCounter >= maxQn) {
         localStorage.setItem('latestPoint', points);
@@ -133,7 +133,7 @@ getQn = () => {
 };
 
 options.forEach(function(option) {
-    option.addEventListener('click', (event) => {
+    option.addEventListener('click', function (event){
       //Ignore input
       if (acceptingAnswers == true){
         //Reject multiple inputs
