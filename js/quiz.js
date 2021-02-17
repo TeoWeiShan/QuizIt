@@ -7,7 +7,19 @@ $(document).ready(function(){
 
     let amount = $("#amount").val();
     let difficulty = $("#difficulty").val();
-
+    if (amount == ""){
+    alert("Don't leave it empty!");
+    return false;
+    }
+    if (amount < 1) {
+      alert("Number of questions cannot be lesser than 1!");
+      return false;
+    }
+    if (amount > 50) {
+      alert("Number of questions cannot be greater than 50!");
+      return false;
+    }
+    
     let urlAPI= "https://opentdb.com/api.php?amount=" + amount + "&category=9&difficulty=" + difficulty + "&type=multiple";
 
     ($('#selector')[0]).classList.add('hidden');
