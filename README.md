@@ -59,11 +59,18 @@ Our design process is for it to be simple so that everyone can use it to have fu
     4. Difficulty input box: Verify that options available from a dropdown-menu are 'Easy'/'Medium'/'Hard'
     5. Submit with all valid inputs, verify that it progresses on to the questions
 
-4. Quiz page - Questions:
-    1. Test selecting a wrong answer, selected option box should turn red
-    2. Test selecting the right answer, selected option box should turn green, points should increase by 1-3 based on difficulty
+4. Quiz page - Loader:
+    1. If API is not retrivable (External response code not equals to 200 or internal response code not equals to 0), "API retrival error" alert should pop up and redirect them to the Home page
+    2. If API is retrivable, loader should appear to initialise question
+    3. Loader should disappear and questions should pop up after quesions have been loaded
 
-5. End of Quiz page:
+5. Quiz page - Questions:
+    1. Test selecting a wrong answer, selected option box should turn red
+    2. Test selecting the right answer, selected option box should turn green, points should increase by 1-3 based on difficulty selected.
+    3. Test selecting an option, box will retain color for a short while before the question and option is beinf replaced with a new one
+    3. After completing the last question, redirect user to to End page
+
+6. End of Quiz page:
     1. 'Save' button: Upon pressing, verify that a record has been saved in the Leaderboard(leaderboard.html), and button should disappear
     2. 'Play Again' button: Verify that clicking it links back to the Quiz page difficulty selection
     3. 'Go Home' button: Verify that clicking it links back to the Home page
