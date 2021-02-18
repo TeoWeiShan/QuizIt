@@ -7,7 +7,7 @@ let pointData = JSON.parse(localStorage.getItem('pointData')) || [];
 finalPoint.innerText = latestPoint;
 //DateTime structuring
 let date = new Date().toLocaleDateString();
-let time = new Date().toLocaleTimeString()
+let time = new Date().toLocaleTimeString();
 let dateTime = date +" "+  time;
 //Save point data to local save
 savePoint = function(e) {
