@@ -39,9 +39,9 @@ Our design process is for it to be simple so that everyone can use it to have fu
 - As well as Adobe XD which was used for the wireframes of the webpage.
 
 ## Testing
-HTML validator using [this website](https://validator.w3.org/)
-CSS validator using [this website](https://jigsaw.w3.org/css-validator/)
-JS validator using [this website](https://jshint.com/)
+- HTML validator using [this website](https://validator.w3.org/)
+- CSS validator using [this website](https://jigsaw.w3.org/css-validator/)
+- JS validator using [this website](https://jshint.com/)
 
 1. Home page:
     1. Click on 'Start' button, should link to quiz.html starting with the difficulty selection
@@ -61,7 +61,7 @@ JS validator using [this website](https://jshint.com/)
 
 4. Quiz page - Questions:
     1. Test selecting a wrong answer, selected option box should turn red
-    2. Test selecting the right answer, selected option box should turn green, points should increase by 1
+    2. Test selecting the right answer, selected option box should turn green, points should increase by 1-3 based on difficulty
 
 5. End of Quiz page:
     1. 'Save' button: Upon pressing, verify that a record has been saved in the Leaderboard(leaderboard.html), and button should disappear
