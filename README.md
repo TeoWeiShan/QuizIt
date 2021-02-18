@@ -1,6 +1,8 @@
 # QuizIt
 The name of this project is QuizIt!. We created this website utilising OpenTDB api to create a fun little quiz for everyone to enjoy at their time. Given that many of us are stuck at home for the most part now, we can all play some quizzes amuse ourselves when we are bored.
 
+Our pitch/demo can be found [here](https://drive.google.com/file/d/1tqKKw0DC4rYHgvexd2j9z213IgWb3mT8/view)
+
 ## Design Process
 Our design process is for it to be simple so that everyone can use it to have fun. It is more so targeted at younger people, usually school-going as they would have more time than working adults, to play this quiz when they are at home with idle time.
 
@@ -12,6 +14,8 @@ Blue is used as an overall as it usually is used in representing education, whic
 - As someone who is looking to test myself on some quiz questions and have some fun, I would like a seamless and uncluttered quiz game that allows for me to play without difficulty.
 
 - As an adult and parent looking for a simple game to play with my children, I would like a game that is easy to understand and play with younger children as well as be educational for them, such that we can have fun and at the same time learn a thing or two. 
+
+[Wireframe](https://github.com/TeoWeiShan/QuizIt/blob/main/QuizIt!%20wireframes%20artboard.xd)
 
 ## Features
 
