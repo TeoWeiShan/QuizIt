@@ -1,36 +1,34 @@
 <!DOCTYPE html>
-<html lang = "en">
-  <head>
+<html lang="en">
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>QuizIt!</title>
     <link href="css/normalize.css" rel="stylesheet" type="text/css" />
-    <link href="css/leaderboard.css" rel="stylesheet" type="text/css"
-    />
+    <link href="css/leaderboard.css" rel="stylesheet" type="text/css" />
     <link rel="shortcut icon" type="image/png" href="img/favicon.png">
-  </head>
-  <body>
+</head>
+
+<body>
     <div class="container">
-      <div id="leaderboard">
-        <h1 id="finalPoint">Leaderboard</h1>
-        <!-- List of Leaderboard rankings -->
-        <ul id="leaderboardList">
-          <li class="leaderboard"></li>
-        </ul>
-        <div id="btn">
-          <!-- Button for clearing the Leaderboard -->
-        <button 
-            class="btn"
-            id="clrBtn"
-            onclick="clrStorage(event)"
-          >Clear
-          </button>
-        <!-- Button for returning to the home page (index.html) -->
-        <a class="btn" href="index.html">Home</a>
+        <div id="leaderboard">
+            <h1 id="finalPoint">Leaderboard</h1>
+            <!-- List of Leaderboard rankings -->
+            <ul id="leaderboardList">
+                <li class="leaderboard"></li>
+            </ul>
+            <div id="btn">
+                <!-- Button for clearing the Leaderboard -->
+                <button class="btn" id="clrBtn" onclick="clrStorage(event)">Clear
+        </button>
+                <!-- Button for returning to the home page (index.html) -->
+                <a class="btn" href="index.html">Home</a>
+            </div>
         </div>
-      </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/leaderboard.js"></script>
-  </body>
+</body>
+
 </html>

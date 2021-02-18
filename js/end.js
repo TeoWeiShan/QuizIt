@@ -8,7 +8,7 @@ finalPoint.innerText = latestPoint;
 //DateTime structuring
 let date = new Date().toLocaleDateString();
 let time = new Date().toLocaleTimeString();
-let dateTime = date +" "+  time;
+let dateTime = date + " " + time;
 //Save point data to local save
 function savePoint(e) {
     e.preventDefault();
@@ -20,11 +20,11 @@ function savePoint(e) {
     //save
     pointData.push(point);
     //sort data
-    pointData.sort (function(a, b){return b.point-a.point;});
+    pointData.sort(function(a, b) { return b.point - a.point; });
     //retain 10 data
     pointData.splice(10);
     //save
-    localStorage.setItem('pointData', JSON.stringify(pointData));   
+    localStorage.setItem('pointData', JSON.stringify(pointData));
     //disable re-save 
     ($('#saveBtn')[0]).classList.add('hidden');
 }

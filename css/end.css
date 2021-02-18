@@ -1,31 +1,30 @@
-body{
+body {
     background-color: lightskyblue;
-    
     font-family: Arial, Helvetica, sans-serif;
-  }
-  
-  * {
+}
+
+* {
     box-sizing: border-box;
     margin: 0;
     color: #333;
-  }
-  
-  h1{
+}
+
+h1 {
     font-size: 3rem;
     color: black;
     margin-bottom: 2rem;
-  }
-  
-  .container {
+}
+
+.container {
     width: 100vw;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-  }
-  
-  .btn {
+}
+
+.btn {
     font-size: 1rem;
     padding: 0.75rem 0;
     width: 12rem;
@@ -36,17 +35,15 @@ body{
     text-decoration: none;
     color: cornflowerblue;
     background-color: white;
-  }
-  
-  #end {
+}
+
+#end {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  }
-  
-  
-  
-  .hidden {
+}
+
+.hidden {
     display: none;
-  }
+}
