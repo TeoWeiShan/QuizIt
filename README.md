@@ -40,9 +40,30 @@ Blue is used as an overall as it usually is used in representing education, whic
 - Online Database for Online Leaderboards
 
 ## Technologies Used
-- jQuery used to simplify DOM manipulation.
-- Others include Visual Studio Code to program the webpage using HTML and CSS.
-- As well as Adobe XD which was used for the wireframes of the webpage.
+- [Visual Studio Code](https://code.visualstudio.com/)
+    - The project uses **Visual Studio Code** to program the webpage.
+- HTML
+    - The project uses **HTML** to create the website.
+- [JavaScript](https://www.javascript.com/)
+    - The project uses **JavaScript** to allow interactivity on the website. 
+- [JSON](https://www.json.org/json-en.html)
+    - The project uses **JSON** to store and retrieve local data.
+- [JQuery](https://jquery.com)
+    - The project uses **JQuery** to simplify DOM manipulation.
+- [Adobe XD](https://www.adobe.com/sea/products/xd.html)
+    - The project uses **Adobe XD** to make wireframes for viewing.
+- [Open Trivia Database API](https://opentdb.com/)
+    - The project uses **Spoonacular API** to obtain data that is provided rapidly.
+- [W3C MarkUp Validation](https://validator.w3.org/)
+    - The project uses **W3C MarkUp Validation** to validate HTML.
+- [W3C Link Checking](https://validator.w3.org/)
+    - The project uses **W3C Link Checking** to validate links included in the HTML.
+- [JSHint](https://jshint.com/)
+    - The project uses **JSHint** to validate JavaScript used on the website.
+- [Color Contrast Accessibility Validator](https://color.a11y.com/Contrast/)
+    - The project uses **Color Contrast Accessibility Validator** to validate color contrast on the website.
+- [typosaurus](https://typosaur.us/)
+    - The project uses **typosaurus** to check for spelling errors.
 
 ## Testing
 - HTML validator using [this website](https://validator.w3.org/)
@@ -89,6 +110,8 @@ All files can be downloaded in [ZIP format](https://teoweishan.github.io/TeoWeiS
 urlAPI can be changed in quiz.js to include your own API Key.
 
 ## Credits
+This website is done by Sew Jing Wen and Teo Wei Shan
+
 ### Content
 - [API](https://opentdb.com/)
 - [JQuery](https://jquery.com)
