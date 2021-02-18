@@ -15,7 +15,7 @@ Blue is used as an overall as it usually is used in representing education, whic
 
 - As an adult and parent looking for a simple game to play with my children, I would like a game that is easy to understand and play with younger children as well as be educational for them, such that we can have fun and at the same time learn a thing or two. 
 
-[Wireframe](https://github.com/TeoWeiShan/QuizIt/blob/main/QuizIt!%20wireframes%20artboard.xd)
+[Wireframe](https://github.com/TeoWeiShan/QuizIt/blob/main/wireframe/QuizIt!%20wireframes%20artboard.xd)
 
 ## Features
 
