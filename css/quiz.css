@@ -9,6 +9,9 @@ body {
     color: rgb(0, 0, 0);
 }
 
+
+/*difficulty selector*/
+
 .trivia_selector {
     display: flex;
     justify-content: center;
@@ -48,12 +51,18 @@ select {
     align-items: center;
 }
 
+
+/*loader*/
+
 .animation-center {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 90vh;
 }
+
+
+/*quiz*/
 
 h1 {
     font-size: 5.4rem;
@@ -73,12 +82,6 @@ h1 {
 
 .container>* {
     width: 75%;
-}
-
-game {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 }
 
 .hidden {
@@ -108,6 +111,9 @@ game {
     cursor: pointer;
 }
 
+
+/*game infomation*/
+
 #game-info {
     display: flex;
     justify-content: space-between;
@@ -133,6 +139,9 @@ game {
     font-weight: 700;
     text-align: left;
 }
+
+
+/* color for right/wrong answer*/
 
 .correct {
     background-color: lightseagreen;
