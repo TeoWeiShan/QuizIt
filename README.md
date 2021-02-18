@@ -41,6 +41,32 @@ Our design process is for it to be simple so that everyone can use it to have fu
 ## Testing
 HTML validator using [this website](https://validator.w3.org/)
 CSS validator using [this website](https://jigsaw.w3.org/css-validator/)
+JS validator using [this website](https://jshint.com/)
+
+1. Home page:
+    1. Click on 'Start' button, should link to quiz.html starting with the difficulty selection
+    2. Click on 'Leaderboard' button, should link to leaderboard.html showing the scores that were set
+
+2. Leaderboard:
+    1. Check that all saved scores are displayed
+    2. 'Clear' button: If there are any saved scores, button should be displayed, else it would not show. Upon clicking the button, all saved scores and their displays should be erased.
+    3. 'Home' button: Verify that clicking it links back to the Home page
+
+3. Quiz page - Difficulty selection:
+    1. Number of questions input box: Try to enter keys other than numerical digits, verify that it is not inputted
+    2. Number of questions input box: Try entering a number that is not in range 1-50, relevant error message should be displayed
+    3. Number of questions input box: Try leaving the input box empty, error message should be displayed
+    4. Difficulty input box: Verify that options available from a dropdown-menu are 'Easy'/'Medium'/'Hard'
+    5. Submit with all valid inputs, verify that it progresses on to the questions
+
+4. Quiz page - Questions:
+    1. Test selecting a wrong answer, selected option box should turn red
+    2. Test selecting the right answer, selected option box should turn green, points should increase by 1
+
+5. End of Quiz page:
+    1. 'Save' button: Upon pressing, verify that a record has been saved in the Leaderboard(leaderboard.html), and button should disappear
+    2. 'Play Again' button: Verify that clicking it links back to the Quiz page difficulty selection
+    3. 'Go Home' button: Verify that clicking it links back to the Home page
 
 ## Deployment
 Website: https://teoweishan.github.io/QuizIt/
@@ -55,7 +81,7 @@ urlAPI can be changed in quiz.js to include your own API Key.
 - [JQuery](https://jquery.com)
 - [Lottie animations](https://lottiefiles.com/)
 ### Media
-
+- Favicon (Sew Jing Wen)
 ### Codes
 - [W3Schools](https://www.w3schools.com/)
 - [Stephen H. Hulme](https://github.com/shulme801)
