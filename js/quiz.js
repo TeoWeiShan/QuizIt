@@ -43,7 +43,7 @@ $(document).ready(function () {
         alert("API retrival error");
       }
 
-    })
+    });
 
 
 
@@ -63,7 +63,7 @@ $(document).ready(function () {
           };
 
           let answerOptions = [...loadQn.incorrect_answers];
-          formatQn.answer = Math.round(Math.random() * 4) + 1;
+          formatQn.answer = Math.floor(Math.random() * 4) + 1;
           answerOptions.splice(
             formatQn.answer - 1, 0, loadQn.correct_answer
           );
@@ -102,7 +102,7 @@ $(document).ready(function () {
       getQn();
       ($('#loader')[0]).classList.add('hidden');
       ($('#game')[0]).classList.remove('hidden');
-    };
+    }
 
     //Retrive and display question
     function getQn() {
@@ -114,15 +114,15 @@ $(document).ready(function () {
       else {
         //Update game info display
         qnCounter++;
-        questionNumber.innerText = `${qnCounter}/${maxQn}`;
+        $('#questionNumber')[0].innerText = `${qnCounter}/${maxQn}`;
         pointsText.innerText = points;
 
         let questionIndex = Math.floor(Math.random() * availQn.length);
         currentQn = availQn[questionIndex];
-        question.innerHTML = currentQn.question;
+        $('#question')[0].innerHTML = currentQn.question;
 
         options.forEach(function (option) {
-          let number = option.dataset['number'];
+          let number = option.dataset.number;
           option.innerHTML = currentQn['option' + number];
         });
         //Remove answeed question from loaded question array
@@ -131,7 +131,7 @@ $(document).ready(function () {
 
       }
 
-    };
+    }
 
     options.forEach(function (option) {
       option.addEventListener('click', function (event) {
@@ -141,14 +141,14 @@ $(document).ready(function () {
           acceptingAnswers = false;
           //Retain input details
           let selectedOption = event.target;
-          let selectedAnswer = selectedOption.dataset['number'];
+          let selectedAnswer = selectedOption.dataset.number;
           //Apply correct wrong classes for display
-          let classToApply = 'incorrect'
+          let classToApply = 'incorrect';
           if (selectedAnswer == currentQn.answer) {
             classToApply = 'correct';
           }
           //Allow visual changes in css
-          $(selectedOption).parent().addClass(classToApply)
+          $(selectedOption).parent().addClass(classToApply);
           //Update game info display (points)
           if (classToApply === 'correct') {
             points += correctPoints;
@@ -166,7 +166,7 @@ $(document).ready(function () {
       });
     });
 
-  })
+  });
   $("#amount").ForceNumericOnly();
 });
 // Validation for Number of Questions input: Allows only numerical inputs

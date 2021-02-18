@@ -14,12 +14,27 @@ Our design process is for it to be simple so that everyone can use it to have fu
 ## Features
 
 ### Existing Features
-- The Quiz game includes a 'Leaderboard' feature which showcases the top scores that you have gotten. You can use this to keep track your scores.
+#### Homepage
+- Landing page where players can navigate to play the quiz or check their scores on the leaderboard.
+
+#### Quiz 
+- Selector segement for players to adjust the number of questions and difficulty of the game to enhance their game play experience.
+- Quiz segement for players to test their knowledege.
+
+#### End
+- Displays total points scored
+- Save button for players to save and keep track of their score locally
+- Navigation buttons for players to choose either to exit or continue playing the game.
+
+#### Leaderboard
+- Displays total score from previous saved sessions.
+- Clear button to clear leaderboard.
 
 ## Features Left to Implement
 - Online Database for Online Leaderboards
+
 ## Technologies Used
-- jQuery used for display manipulation, showing correct answers/turning correct boxes green etc
+- jQuery used to simplify DOM manipulation.
 - Others include Visual Studio Code to program the webpage using HTML and CSS.
 - As well as Adobe XD which was used for the wireframes of the webpage.
 
@@ -42,6 +57,7 @@ urlAPI can be changed in quiz.js to include your own API Key.
 ### Media
 
 ### Codes
+- [W3Schools](https://www.w3schools.com/)
 - [Stephen H. Hulme](https://github.com/shulme801)
 - [James Q Quick](https://www.jamesqquick.com/)
 - [Number of questions validation](https://stackoverflow.com/questions/995183/how-to-allow-only-numeric-0-9-in-html-inputbox-using-jquery)
