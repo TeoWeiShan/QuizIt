@@ -4,6 +4,8 @@ The name of this project is QuizIt!. We created this website utilising OpenTDB a
 ## Design Process
 Our design process is for it to be simple so that everyone can use it to have fun. It is more so targeted at younger people, usually school-going as they would have more time than working adults, to play this quiz when they are at home with idle time.
 
+Blue is used as an overall as it usually is used in representing education, which is what this website is about. Round features are commonly used to make have a visual appeal that the game is user-friendly and great for beginners.
+
 (User Stories)
 - As a student who does not have much to do at home, I would like a quick and simple game to play to pass time.
 
@@ -76,9 +78,9 @@ Our design process is for it to be simple so that everyone can use it to have fu
     3. 'Go Home' button: Verify that clicking it links back to the Home page
 
 ## Deployment
-Website: https://teoweishan.github.io/QuizIt/
+[Website](https://teoweishan.github.io/QuizIt/)
 
-All files can be downloaded in ZIP file at: https://teoweishan.github.io/QuizIt/
+All files can be downloaded in [ZIP format](https://teoweishan.github.io/TeoWeiShan/QuizIt/archive/main.zip)
 
 urlAPI can be changed in quiz.js to include your own API Key.
 
