@@ -10,7 +10,7 @@ let date = new Date().toLocaleDateString();
 let time = new Date().toLocaleTimeString();
 let dateTime = date +" "+  time;
 //Save point data to local save
-savePoint = function(e) {
+function savePoint(e) {
     e.preventDefault();
     //structure data save
     let point = {
@@ -20,11 +20,11 @@ savePoint = function(e) {
     //save
     pointData.push(point);
     //sort data
-    pointData.sort((a, b) => b.point - a.point);
+    pointData.sort (function(a, b){return b.point-a.point;});
     //retain 10 data
     pointData.splice(10);
     //save
     localStorage.setItem('pointData', JSON.stringify(pointData));   
     //disable re-save 
     ($('#saveBtn')[0]).classList.add('hidden');
-};
+}
